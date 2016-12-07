@@ -1,0 +1,7 @@
+<h3>List of Employees</h3>
+<div class="cotainer">
+  <div *ngFor="let employee of employeeList" class="weel">
+    <span>{{employee.name}}</span>
+    <a [routerLink]="['/employees', employee.id]">View</a>
+  </div>
+</div>
